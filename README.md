@@ -37,39 +37,8 @@ This project provides a simple CLI-based simulation to help students and develop
 -> View transaction history
 -> Simple menu-driven console interface
 
-5. UML Diagram
 
-+-------------------+          +-----------------------------+
-|      Wallet       |          |       Transaction           |
-+-------------------+          +-----------------------------+
-| - address: String |          | - fromAddress: String       |
-| - balance: double |          | - toAddress: String         |
-+-------------------+          | - amount: double            |
-| + deposit(amount) |          +-----------------------------+
-| + withdraw(amount)|          | + getDetails(): String      |
-| + getBalance()    |          +-----------------------------+
-+-------------------+                    ▲
-             ▲                           |
-             |                           |
-             | manages/uses              |
-             |                           |
-             |                           |
-      +----------------------------------+
-      |        CryptoWalletSim           |
-      +----------------------------------+
-      | - wallets: List<Wallet>          |
-      | - transactions: List<Transaction>|
-      +----------------------------------+
-      | + main(String[] args)            |
-      | + createWallet()                 |
-      | + checkBalance()                 |
-      | + send()                         |
-      | + receive()                      |
-      | + showHistory()                  |
-      +----------------------------------+
-
-
-6. OOP Concepts Used
+5. OOP Concepts Used
 
 Encapsulation → Wallet details and transaction data are kept private. Access is given only through methods.
 
@@ -81,7 +50,7 @@ Inheritance → Can be extended further (e.g., BitcoinWallet or EthereumWallet c
 
 Classes & Objects → Each wallet is an object created from the Wallet class.
 
-7.Expected Outcome
+6.Expected Outcome
 
 A fully working wallet simulation in the console
 
